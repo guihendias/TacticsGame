@@ -24,6 +24,31 @@ namespace TacticsGame
             Characters.Add(CharacterFactory.CreateCharacter(CharacterType.Mage));
         }
 
+
+        public Player(string name, TeamType type, List<Character> characters)
+        {
+            Name = name;
+            Type = type;
+
+            Characters = characters;
+        }
+
+        public Player(string name, TeamType type, int characterNumbers)
+        {
+            Name = name;
+            Type = type;
+            Characters = new List<Character>();
+
+            Random random = new Random();
+            int maxCharacters = Enum.GetNames(typeof(CharacterType)).Length;
+
+            for (int i = 0; i < characterNumbers; i++)
+            {
+                int index = random.Next(maxCharacters);
+                Characters.Add(CharacterFactory.CreateCharacter((CharacterType)index));
+            }
+        }
+
         public override string ToString()
         {
             StringBuilder sBuilder = new StringBuilder();
