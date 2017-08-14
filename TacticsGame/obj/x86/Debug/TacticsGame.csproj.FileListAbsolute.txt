@@ -1,0 +1,8 @@
+C:\Users\lab4c\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\lab4c\AppData\Local\Temporary Projects\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\lab4c\AppData\Local\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\lab4c\AppData\Local\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\lab4c\documents\visual studio 2010\Projects\TacticsGame\TacticsGame\bin\Debug\TacticsGame.exe
+C:\Users\lab4c\documents\visual studio 2010\Projects\TacticsGame\TacticsGame\bin\Debug\TacticsGame.pdb
+C:\Users\lab4c\documents\visual studio 2010\Projects\TacticsGame\TacticsGame\obj\x86\Debug\TacticsGame.exe
+C:\Users\lab4c\documents\visual studio 2010\Projects\TacticsGame\TacticsGame\obj\x86\Debug\TacticsGame.pdb
