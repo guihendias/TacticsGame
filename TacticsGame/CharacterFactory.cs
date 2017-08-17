@@ -22,5 +22,17 @@ namespace TacticsGame
                     return null;
             }
         }
+
+        public static Character CreateCharacter(int index)
+        {
+            return CreateCharacter((CharacterType)index);
+        }
+
+        public static Character CreateCharacter()
+        {
+            int maxCharacters = Utils.EnumCount<CharacterType>();
+            int index = Utils.Random(maxCharacters);
+            return CreateCharacter((CharacterType)index);
+        }
     }
 }

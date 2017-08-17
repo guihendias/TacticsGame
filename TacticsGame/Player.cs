@@ -15,10 +15,8 @@ namespace TacticsGame
 
         public Player(string name, TeamType type)
         {
-            Name = name;
-            Type = type;
+            Clear(name, type, new List<Character>());
 
-            Characters = new List<Character>();
             Characters.Add(CharacterFactory.CreateCharacter(CharacterType.Archer));
             Characters.Add(CharacterFactory.CreateCharacter(CharacterType.Knight));
             Characters.Add(CharacterFactory.CreateCharacter(CharacterType.Mage));
@@ -27,26 +25,25 @@ namespace TacticsGame
 
         public Player(string name, TeamType type, List<Character> characters)
         {
-            Name = name;
-            Type = type;
-
-            Characters = characters;
+            Clear(name, type, characters);
         }
 
         public Player(string name, TeamType type, int characterNumbers)
         {
-            Name = name;
-            Type = type;
-            Characters = new List<Character>();
+            Clear(name, type, new List<Character>());
 
-            Random random = new Random();
-            int maxCharacters = Enum.GetNames(typeof(CharacterType)).Length;
+            int maxCharacters = Utils.EnumCount<CharacterType>();
 
             for (int i = 0; i < characterNumbers; i++)
-            {
-                int index = random.Next(maxCharacters);
-                Characters.Add(CharacterFactory.CreateCharacter((CharacterType)index));
-            }
+                Characters.Add(CharacterFactory.CreateCharacter();
+        }
+
+        private void Clear(string name, TeamType type, List<Character> characters)
+        {
+            Name = name;
+            Type = type;
+
+            Characters = characters;
         }
 
         public override string ToString()
@@ -55,9 +52,7 @@ namespace TacticsGame
             sBuilder.Append(Name).Append("(").Append(Type).Append(")\n");
 
             foreach (Character character in Characters)
-            {
                 sBuilder.Append(character.ToString());
-            }
 
             return sBuilder.ToString();
         }

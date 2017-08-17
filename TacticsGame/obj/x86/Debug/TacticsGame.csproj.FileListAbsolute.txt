@@ -6,3 +6,5 @@ C:\Users\lab4c\documents\visual studio 2010\Projects\TacticsGame\TacticsGame\bin
 C:\Users\lab4c\documents\visual studio 2010\Projects\TacticsGame\TacticsGame\bin\Debug\TacticsGame.pdb
 C:\Users\lab4c\documents\visual studio 2010\Projects\TacticsGame\TacticsGame\obj\x86\Debug\TacticsGame.exe
 C:\Users\lab4c\documents\visual studio 2010\Projects\TacticsGame\TacticsGame\obj\x86\Debug\TacticsGame.pdb
+C:\Users\lab4c\Documents\GitHub\TacticsGame\TacticsGame\obj\x86\Debug\TacticsGame.exe
+C:\Users\lab4c\Documents\GitHub\TacticsGame\TacticsGame\obj\x86\Debug\TacticsGame.pdb
