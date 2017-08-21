@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlockedCell.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="Cell.cs" />
+    <Compile Include="PassableCell.cs" />
     <Compile Include="Character.cs" />
     <Compile Include="CharacterFactory.cs" />
     <Compile Include="CharacterType.cs" />

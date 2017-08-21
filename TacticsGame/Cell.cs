@@ -5,37 +5,21 @@ using System.Text;
 
 namespace TacticsGame
 {
-    public class Cell
+    public abstract class Cell
     {
-        private List<Character> occupants = null;
 
-        public Vector2 Position { get; private set; }
+        public Vector2 Position { get; protected set; }
 
         public Cell(Vector2 position)
         {
             Position = position;
-            occupants = new List<Character>();
         }
 
-        public void Occupy(Character character)
-        {
-            if (IsOccupied) return;
-            occupants.Add(character);
-        }
+        public abstract char Symbol { get; }
 
-        public void Leave()
-        {
-            occupants.RemoveAt(0);
-        }
+        public abstract Object Occupant { get; }
 
-        public bool IsOccupied
-        {
-            get { return occupants.Count > 0; }
-        }
+        public abstract bool IsOccupied { get; }
 
-        public Character Occupant
-        {
-            get { return IsOccupied ? occupants[0] : null; }
-        }
     }
 }

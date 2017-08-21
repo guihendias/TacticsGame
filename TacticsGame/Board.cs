@@ -19,9 +19,14 @@ namespace TacticsGame
             ColumnNumber = columnNumber;
             table = new Cell[rowNumber, columnNumber];
 
-            for (int i = 0; i < rowNumber; i++)
-                for (int j = 0; j < columnNumber; j++)
-                    table[i, j] = new Cell(new Vector2(i, j));
+            Clear();
+        }
+
+        private void Clear()
+        {
+            for (int i = 0; i < RowNumber; i++)
+                for (int j = 0; j < ColumnNumber; j++)
+                    table[i, j] = new PassableCell(new Vector2(i, j));
         }
 
         public override string ToString()
@@ -30,10 +35,7 @@ namespace TacticsGame
             for (int i = 0; i < RowNumber; i++)
                 for (int j = 0; j < ColumnNumber; j++)
                 {
-                    if (table[i, j].IsOccupied)
-                        sBuilder.Append(table[i, j].Occupant.Type.ToString()[0]);
-                    else
-                        sBuilder.Append(".");
+                    sBuilder.Append(table[i, j].Symbol);
                 }
             return sBuilder.ToString();
         }

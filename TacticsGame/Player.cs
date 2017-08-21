@@ -35,7 +35,7 @@ namespace TacticsGame
             int maxCharacters = Utils.EnumCount<CharacterType>();
 
             for (int i = 0; i < characterNumbers; i++)
-                Characters.Add(CharacterFactory.CreateCharacter();
+                Characters.Add(CharacterFactory.CreateCharacter());
         }
 
         private void Clear(string name, TeamType type, List<Character> characters)
